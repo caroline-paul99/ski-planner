@@ -81,4 +81,5 @@ Streaming, user accounts, saved trips, flights, a cron digest, styling beyond ba
 
 Update this section as steps get done.
 
-- [ ] Sunday 1
+- [x] Sunday 1: Next.js app created, pushed to https://github.com/caroline-paul99/ski-planner
+- [ ] Sunday 2
