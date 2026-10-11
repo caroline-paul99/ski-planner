@@ -82,4 +82,5 @@ Streaming, user accounts, saved trips, flights, a cron digest, styling beyond ba
 Update this section as steps get done.
 
 - [x] Sunday 1: Next.js app created, pushed to https://github.com/caroline-paul99/ski-planner
-- [ ] Sunday 2
+- [x] Sunday 2: Deployed to Vercel at https://ski-planner-vert.vercel.app/ (auto-deploys on push to `main`)
+- [ ] Sunday 3
