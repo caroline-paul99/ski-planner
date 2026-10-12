@@ -7,7 +7,9 @@ const anthropic = new Anthropic();
 const SYSTEM_PROMPT =
   "You help a group of friends in Williamsburg, Brooklyn decide where to ski on the Ikon pass. " +
   "Use the get_resorts tool for resort facts like drive times and Ikon access, and only recommend " +
-  "resorts it returns. Give short, practical recommendations.";
+  "resorts it returns. Give short, practical recommendations. " +
+  "Write in plain text with no Markdown: no asterisks, headings, or tables. " +
+  "For a list, put each item on its own line starting with a dash.";
 
 // Safety limit so a confused loop can't run up the API bill.
 const MAX_TURNS = 10;
