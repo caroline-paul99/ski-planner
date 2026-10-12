@@ -86,4 +86,6 @@ Update this section as steps get done.
 - [x] Sunday 3: Supabase `resorts` table created (schema in `supabase/resorts.sql`), `/api/resorts` returns 10 resorts locally
 - [x] Sunday 3 (live): `/api/resorts` works on Vercel with Supabase env vars set
 - [x] Sunday 4: `/api/chat` returns a Claude reply (no tools yet) and the page shows it (tested locally)
-- [ ] Sunday 5
+- [x] Sunday 5: Env vars set in Vercel; chat works on https://ski-planner-vert.vercel.app/
+- [x] Monday 1: `get_resorts` tool (in `lib/tools.ts`) and tool-use loop in `/api/chat` (tested locally)
+- [ ] Monday 2

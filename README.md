@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ski Trip Planner
 
-## Getting Started
+Ask where to ski on the Ikon pass from NYC. Claude answers using real resort data.
 
-First, run the development server:
+## Try it
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Open https://ski-planner-vert.vercel.app/
+2. Ask a question, e.g.:
+   - Which resort is the shortest drive?
+   - Which resorts are under 5 hours with unlimited Ikon access?
+3. Wait about 10 seconds for the answer.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Notes: one question at a time (no follow-ups). Snow forecasts coming soon.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Run locally
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. `npm install`
+2. Run `supabase/resorts.sql` in the Supabase SQL Editor.
+3. Create `.env.local`:
+   ```
+   SUPABASE_URL=https://your-project-id.supabase.co
+   SUPABASE_ANON_KEY=...
+   ANTHROPIC_API_KEY=...
+   ```
+4. `npm run dev`, then open http://localhost:3000
 
-## Learn More
+## Stack
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Next.js, Supabase, Claude (Anthropic API), Vercel.
