@@ -83,4 +83,5 @@ Update this section as steps get done.
 
 - [x] Sunday 1: Next.js app created, pushed to https://github.com/caroline-paul99/ski-planner
 - [x] Sunday 2: Deployed to Vercel at https://ski-planner-vert.vercel.app/ (auto-deploys on push to `main`)
-- [ ] Sunday 3
+- [x] Sunday 3: Supabase `resorts` table created (schema in `supabase/resorts.sql`), `/api/resorts` returns 10 resorts locally
+- [ ] Sunday 4
